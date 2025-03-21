@@ -68,3 +68,8 @@ clearBtn.addEventListener("click", function()
     // logic is basically clear the complete dta
     myh1.innerText = "0"
 })
+
+const Clear = document.getElementById("clear")
+Clear.addEventListener("click", function(){
+    myh1.innerText = myh1.innerText.slice(0, -1)
+})
